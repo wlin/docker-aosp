@@ -13,7 +13,7 @@ AOSP_IMAGE=${AOSP_IMAGE:-weishu/build-aosp}
 echo 'AOSP IMAGE' ${AOSP_IMAGE}
 AOSP_ARGS=${AOSP_ARGS:---rm -it}
 
-AOSP_VOL=${AOSP_VOL:-~/aosp-root}
+AOSP_VOL=${AOSP_VOL:-$AOSP_VOL/aosp-root}
 AOSP_VOL=${AOSP_VOL%/} # Trim trailing slash if needed
 AOSP_VOL_AOSP=${AOSP_VOL_AOSP:-$AOSP_VOL/aosp}
 AOSP_VOL_AOSP=${AOSP_VOL_AOSP%/} # Trim trailing slash if needed
